@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Котики и миски</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png">
+  </head>
+  <body>
+    <div style="margin-top: 10px;">
+      <button id="showContent">Спрятать ввод</button>
+      <button id="showLog">Спрятать log</button>
+    </div>
+
+    <div id="content">
+      <h3>Ввод параметров для расчета</h3>
+      <label for="catsNumber">Количество котов</label>
+      <input type="text" id="catsNumber" placeholder="Введите число" />
+
+      <label for="viskasNumber">Количество корма</label>
+      <input type="text" id="viskasNumber" placeholder="Введите число" />
+
+      <label for="bowlCapacity">Вместимость миски</label>
+      <input type="text" id="bowlCapacity" placeholder="Введите число" />
+
+      <label for="eatingTime">Время на поедания корма</label>
+      <input type="text" id="eatingTime" placeholder="Введите число" />
+
+      <label for="bowlUpdateTime">Время на пополнение миски</label>
+      <input type="text" id="bowlUpdateTime" placeholder="Введите число" />
+
+      <button>Запустить</button>
+    </div>
+    <div class="log"><h3>Log пуст</h3></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

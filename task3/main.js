@@ -43,6 +43,11 @@ document.querySelector('#content button').addEventListener('click',()=>{
     const t=parseInt(document.getElementById('eatingTime').value)
     const r=parseInt(document.getElementById('bowlUpdateTime').value)
 
+    if(b>m){
+        alert('Вместимость миски оказалась меньше количества корма необходимого, чтобы кот наелся')
+        return
+    }
+
     clearLog()
     eating(n,b,m,t,r)
     alert('Все успешно выполнено, можете посмотреть log')
